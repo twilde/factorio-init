@@ -732,7 +732,7 @@ EOH
   if [ "${ALT_GLIBC}" -gt 0 ]; then
     MOD_MANAGER_GLIBC_ARGS="--alternative-glibc-directory ${ALT_GLIBC_DIR} --alternative-glibc-version ${ALT_GLIBC_VER}"
   fi
-  mod_script="python ${MOD_SCRIPT_DIR} --path-to-factorio ${WRITE_DIR} --user ${UPDATE_USERNAME} --token ${UPDATE_TOKEN} ${MOD_MANAGER_GLIBC_ARGS}"
+  mod_script="python3 ${MOD_SCRIPT_DIR} --path-to-factorio ${WRITE_DIR} --user ${UPDATE_USERNAME} --token ${UPDATE_TOKEN} ${MOD_MANAGER_GLIBC_ARGS}"
   cmd="$1"
   shift
   declare -a args
